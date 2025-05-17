@@ -1,0 +1,53 @@
+:root {
+  /* Base colors */
+  --primary-color: #0071e3;
+  --secondary-color: #34c759;
+  --accent-color: #ff9f0a;
+  --danger-color: #ff3b30;
+  
+  /* Text colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #ffffff;
+  
+  /* Background colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --bg-dark: #000000;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  
+  /* Login screen specific */
+  --login-gradient-start: #0575e6;
+  --login-gradient-end: #00f260;
+  --login-container-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  /* Animation speeds */
+  --transition-fast: 0.1s;
+  --transition-normal: 0.2s;
+  --transition-slow: 0.3s;
+}
+
+/* Dark theme variables - to be enabled with JS */
+[data-theme="dark"] {
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-light: #ffffff;
+  
+  --bg-primary: #1c1c1e;
+  --bg-secondary: #2c2c2e;
+  
+  --login-gradient-start: #121212;
+  --login-gradient-end: #434343;
+  --login-container-bg: rgba(0, 0, 0, 0.3);
+}
