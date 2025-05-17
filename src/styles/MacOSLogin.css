@@ -1,0 +1,221 @@
+.macos-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #0575e6, #00f260);
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.time-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time {
+  font-size: 72px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 0 0 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.sign-in-button, .sign-up-button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.sign-in-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sign-in-button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sign-up-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sign-up-button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.divider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 10px;
+}
+
+.google-sign-in {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-sign-in:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin: 15px 0;
+  font-size: 14px;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.system-info {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.google-auth-message {
+  text-align: center;
+  padding: 20px;
+}
+
+.google-auth-message h2 {
+  margin-bottom: 15px;
+}
+
+.google-auth-message p {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.back-button {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
